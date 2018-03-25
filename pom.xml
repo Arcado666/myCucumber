@@ -119,9 +119,7 @@
 					<testFailureIgnore>
 						true<!-- 因为要执行Cucumber -->
 					</testFailureIgnore>
-					<includes>
-						<include>**/myCucumber.java</include>
-					</includes>
+					
 				</configuration>
 			</plugin>
 		</plugins>
