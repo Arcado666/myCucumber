@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)  
-@CucumberOptions(plugin = {"json:target/cucumber.json", "pretty"}, features = "src/test/resources/features",
+@CucumberOptions(plugin = {"json:target/cucumber.json", "html:target/cucumber","pretty"}, features = "src/test/resources/features",
 
 strict = true,
 monochrome = true,
