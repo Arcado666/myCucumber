@@ -1,6 +1,6 @@
 package myCucumber;
 
-import org.junit.Assert;
+import org.testng.Assert;
 
 import cucumber.api.java.zh_cn.假如;
 import cucumber.api.java.zh_cn.当;
