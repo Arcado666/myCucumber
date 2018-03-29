@@ -14,7 +14,7 @@ public class ChineseDemo {
 
 
 
-    @假如("^当前是(.*)")
+    @假如("^当前是 \"([^\"]*)\"$")
 
     public void isChinese(String action){
 
@@ -22,7 +22,7 @@ public class ChineseDemo {
 
     }
 
-    @当("^输入是(.*)")
+    @当("^输入是 \"([^\"]*)\"$")
 
     public void input(String subject){
 
@@ -32,7 +32,7 @@ public class ChineseDemo {
 
  
 
-    @那么("^能看到(.*)")
+    @那么("^能看到 \"([^\"]*)\"$")
 
     public void outPut(String gretting){
 
