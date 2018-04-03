@@ -23,6 +23,8 @@ public class HttpDemo{
 	@那么 ("^拿到的返回结果为:$" )
 	public void getResults() {
 		responseInterface rsi = new responseInterface(result);
-		System.out.println(rsi.getMsg());
+		System.out.println("code为：  "+rsi.getCode());
+		System.out.println("msg为： "+rsi.getMsg());
+		System.out.println("data为： "+rsi.getData());
 	}
 }
