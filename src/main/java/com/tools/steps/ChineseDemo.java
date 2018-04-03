@@ -55,12 +55,12 @@ public class ChineseDemo {
 		}
 	}
 
-	@假如("^:给定了如下的动物:$")
-	public void 给定了如下的动物(DataTable animals) throws Throwable {
-		List<String> animalsList = animals.asList(String.class);
-		if (null != animalsList && !animalsList.isEmpty()) {
-			System.out.println("list长度为:" + animalsList.size());
-			for (String str : animalsList) {
+	@假如("^:给定了如下的word:$")
+	public void 给定了如下的动物(DataTable words) throws Throwable {
+		List<String> wordsList = words.asList(String.class);
+		if (null != wordsList && !wordsList.isEmpty()) {
+			System.out.println("list长度为:" + wordsList.size());
+			for (String str : wordsList) {
 				System.out.println("DataTable:" + str);
 			}
 		}
