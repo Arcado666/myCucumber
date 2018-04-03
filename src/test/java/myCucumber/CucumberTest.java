@@ -1,5 +1,6 @@
 package myCucumber;
 
+
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -11,6 +12,6 @@ import cucumber.api.junit.Cucumber;
 strict = true,
 monochrome = true,
 glue = {"com.tools.steps"},
-tags = {"~@unimplemented"})  
+tags = {"@TestDemo"})  
 public class CucumberTest {  
 }  
