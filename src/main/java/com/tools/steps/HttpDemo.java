@@ -16,8 +16,8 @@ public class HttpDemo extends httpInterface{
 	public HttpDemo(String URL, Map<String, Object> MAP) {
 		super(URL, MAP);
 		// TODO Auto-generated constructor stub
-	}  
-	@当("^我发送一个请求 : \"(.*?)\" 参数为 $")
+	}   
+	@当("^我发送一个请求 : \"([^\"]*)\" 参数为$")
 	public void postRequest(String url,String json) throws Throwable {
         JSONObject jObject = JSONObject.parseObject(json);
         Map<String , Object> map = jObject.getInnerMap();
