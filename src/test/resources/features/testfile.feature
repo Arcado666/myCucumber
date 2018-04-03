@@ -31,3 +31,9 @@
 场景: 数据list
  假如 :给定了如下的word:
  |狮子|老虎|豹子|
+ 
+ 
+ @TestDemo
+场景: 请求
+当 我发送一个请求 : "http://dev.webapi.sunmi.com/webapi/misun/web/further/1.0/?service=FurtherBank.getBankListSft"
+ 那么 拿到返回结果 : 

@@ -7,6 +7,9 @@ import java.util.List;
 
 import org.testng.Assert;
 
+import com.jayway.restassured.response.Response;
+import com.tools.apitools.ApiTools;
+
 import cucumber.api.DataTable;
 import cucumber.api.Delimiter;
 import cucumber.api.Format;
@@ -20,6 +23,8 @@ public class ChineseDemo {
 	private String action;
 
 	private String subject;
+	
+	Response response = null;
 
 	@假如("^当前是 \"([^\"]*)\"$")
 
@@ -89,5 +94,15 @@ public class ChineseDemo {
 		for (String u : user) {
 			System.out.println(u.toString());
 		}
+	}
+	
+	@当("^我发送一个请求 : \"(.*?)\"$")
+	 public void postRequest(String apiPath) throws Throwable {
+        response = ApiTools.post(apiPath);
+    }
+	
+	@那么("^拿到返回结果 : \"(.*?)\"$")
+	public void getResult() {
+		System.out.println(response);
 	}
 }
