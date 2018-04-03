@@ -35,5 +35,12 @@
  
  @TestDemo
 场景: 请求
-当 我发送一个请求 : "http://dev.webapi.sunmi.com/webapi/misun/web/further/1.0/?service=FurtherBank.getBankListSft"
- 那么 拿到返回结果 : 
+当 我发送一个请求 : "http://dev.webapi.sunmi.com/webapi/misun/web/further/1.0/?service=FurtherBank.getBankListSft" 参数为 
+"""
+{
+	"channel":2,
+	"dId":640,
+	"searchKey":""
+}
+"""
+ 那么 拿到的返回结果为:  
