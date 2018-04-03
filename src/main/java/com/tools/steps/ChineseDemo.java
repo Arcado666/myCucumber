@@ -101,7 +101,7 @@ public class ChineseDemo {
         response = ApiTools.post(apiPath);
     }
 	
-	@那么("^拿到返回结果 : \"(.*?)\"$")
+	@那么("^拿到返回结果 :$")
 	public void getResult() {
 		System.out.println("拿到返回结果 : "+response.getBody());
 	}
