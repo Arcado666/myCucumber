@@ -103,6 +103,6 @@ public class ChineseDemo {
 	
 	@那么("^拿到返回结果 :$")
 	public void getResult() {
-		System.out.println("拿到返回结果 : "+response.getBody());
+		System.out.println("拿到返回结果 : "+response.getBody().print());
 	}
 }
